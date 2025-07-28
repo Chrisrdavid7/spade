@@ -40,7 +40,7 @@ const successMessage = ref('')
 
 async function submitBooking() {
   try {
-    const res = await fetch('https://formspree.io/f/xkgzbbbq', {
+    const res = await fetch('https://formspree.io/f/mvgqrqgk', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)
