@@ -1,7 +1,7 @@
 <template>
     <div class="hero-wrapper">
       <video autoplay muted loop playsinline class="hero-video">
-        <source src="/videos/spadeBackground.mp4" type="video/mp4" />
+        <source src="/videos/londonShow.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div class="hero-overlay" />
