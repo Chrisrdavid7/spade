@@ -64,34 +64,34 @@
     {
       src: '/images/spade1.jpg',
       alt: 'DJing',
-      metric: 'Music',
+     
       label: 'Berkshire',
-      sublabel: '2024',
-      desc: 'United Kingdom',
+      sublabel: '2025',
+      desc: 'Nocta Manor',
     },
     {
-      src: '/images/spade2.jpg',
-      alt: 'Crowd',
-      metric: 'Influence',
+      src: '/images/spadeRoom.jpg',
+   
       label: 'New York',
       sublabel: '2025',
       desc: 'Amber Room',
     },
     {
-      src: '/images/spade3.jpg',
+      src: '/images/spadeAus.jpg',
       alt: 'Brand Collab',
-      metric: 'Fashion',
-      label: 'Florida',
-      sublabel: '2024',
-      desc: 'Whatever event this was.',
+
+    
+      label: 'Australia',
+      sublabel: '2025',
+      desc: 'Anita Max Win Tour',
     },
     {
-      src: '/images/spade4.jpg',
+      src: '/images/spadeMiami.jpg',
       alt: 'DJing',
-      metric: 'Music',
-      label: '???',
-      sublabel: '2024',
-      desc: 'Spade opens the main stage at Rolling Loud with a genre-bending set.',
+     
+      label: 'Miami',
+      sublabel: '2025',
+      desc: 'LIV Miami',
     },
     {
       src: '/images/spade5.jpg',
@@ -107,7 +107,15 @@
   
       label: 'London',
       sublabel: '2024',
-      desc: 'Spade Perfom at Tape London.',
+      desc: 'Tape London',
+    },
+    {
+      src: '/images/spadeBlur.jpg',
+      alt: 'Brand Collab',
+  
+      label: 'Chicago',
+      sublabel: '2023',
+      desc: 'It Was All A Blur',
     },
   ]
   
