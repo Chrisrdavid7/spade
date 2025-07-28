@@ -98,7 +98,7 @@ const shows = [
 <style scoped>
 .tour-page {
   position: relative;
-  background-color: black;
+  background-color: rgb(16, 2, 1);
   color: white;
   font-family: 'Helvetica Neue', sans-serif;
   padding-bottom: 6rem;
