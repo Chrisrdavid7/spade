@@ -2,30 +2,31 @@
   <div class="bookings-page">
     <h1 class="title">BOOKINGS</h1>
     <div class="forms-container">
-      <!-- Book Spade Section -->
       <div class="form-section">
         <h2>Book Spade</h2>
         <p class="subtitle">Book Spade For Your Event</p>
 
         <form @submit.prevent="submitBooking">
-          <input v-model="booking.name" type="text" placeholder="Your Name" required />
-          <input v-model="booking.email" type="email" placeholder="Your Email" required />
-          <input v-model="booking.organization" type="text" placeholder="Organization / Company / Private Event" />
-          <input v-model="booking.date" type="date" placeholder="Event Date" required />
-          <input v-model="booking.hours" type="number" min="1" placeholder="Hours (how long is your event)" required />
-          <input v-model="booking.offer" type="number" placeholder="Offer ($ amount)" required />
-          <textarea v-model="booking.message" placeholder="Tell us about the opportunity" rows="5" required></textarea>
+          <input v-model="form.name" type="text" name="name" placeholder="Your Name" required />
+          <input v-model="form.email" type="email" name="email" placeholder="Your Email" required />
+          <input v-model="form.organization" type="text" name="organization" placeholder="Organization / Company / Private Event" />
+          <input v-model="form.date" type="date" name="date" placeholder="Event Date" required />
+          <input v-model="form.hours" type="number" name="hours" placeholder="Hours" required />
+          <input v-model="form.offer" type="number" name="offer" placeholder="Offer ($ amount)" required />
+          <textarea v-model="form.message" name="message" placeholder="Tell us about the opportunity" rows="5" required></textarea>
           <button type="submit">Submit Booking Request</button>
         </form>
+
+        <p v-if="successMessage" class="success-msg">{{ successMessage }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 
-const booking = reactive({
+const form = reactive({
   name: '',
   email: '',
   organization: '',
@@ -35,14 +36,26 @@ const booking = reactive({
   message: ''
 })
 
-function submitBooking() {
-  alert(`Booking Request Sent!
-To: chris@culsecreative.com
-From: ${booking.name} <${booking.email}>
-Date: ${booking.date}
-Hours: ${booking.hours}
-Offer: $${booking.offer}
-Message: ${booking.message}`)
+const successMessage = ref('')
+
+async function submitBooking() {
+  try {
+    const res = await fetch('https://formspree.io/f/xkgzbbbq', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form)
+    })
+
+    if (res.ok) {
+      successMessage.value = 'Booking request sent! We’ll be in touch shortly.'
+      Object.keys(form).forEach(key => form[key] = '') // reset form
+    } else {
+      alert('There was an issue submitting your request.')
+    }
+  } catch (err) {
+    console.error(err)
+    alert('Network error. Please try again later.')
+  }
 }
 </script>
 
@@ -131,7 +144,12 @@ button:hover {
   background-color: #333;
 }
 
-/* Responsive */
+.success-msg {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .forms-container {
     flex-direction: column;
