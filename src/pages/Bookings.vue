@@ -210,7 +210,7 @@ button:hover {
 
   .form-section {
     width: 100%;
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .agency-info {
