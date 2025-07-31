@@ -14,10 +14,26 @@
           <input v-model="form.hours" type="number" name="hours" placeholder="Hours" required />
           <input v-model="form.offer" type="number" name="offer" placeholder="Offer ($ amount)" required />
           <textarea v-model="form.message" name="message" placeholder="Tell us about the opportunity" rows="5" required></textarea>
+
           <button type="submit">Submit Booking Request</button>
         </form>
 
         <p v-if="successMessage" class="success-msg">{{ successMessage }}</p>
+
+        <!-- Enhanced Agency Info Section (no name) -->
+        <div class="agency-info">
+          <h3 class="agency-heading">Representation</h3>
+          <div class="agency-card">
+            <p>DGI Management, Inc.</p>
+            <p>401 Broadway, Suite 1705</p>
+            <p>New York, NY 10013</p>
+            <p>
+              <a href="mailto:yoni@dgimanagement.com" class="agency-email">
+                yoni@dgimanagement.com
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -150,6 +166,42 @@ button:hover {
   font-weight: bold;
 }
 
+/* Enhanced Agency Info Styling */
+.agency-info {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.agency-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.agency-card {
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.agency-email {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.agency-email:hover {
+  color: #444;
+}
+
 @media (max-width: 768px) {
   .forms-container {
     flex-direction: column;
@@ -159,6 +211,14 @@ button:hover {
   .form-section {
     width: 100%;
     max-width: 90%;
+  }
+
+  .agency-info {
+    text-align: center;
+  }
+
+  .agency-card {
+    padding: 1.25rem;
   }
 }
 </style>
