@@ -3,7 +3,7 @@
     <div class="footer-content">
       <div class="footer-left">
         <img src="/images/spadeLogoWhite.png" alt="Spade Logo" class="footer-logo" />
-        <p class="footer-tagline">Connecting Cultures Through Vibration.</p>
+        <p class="footer-tagline">Connecting Cultures Through Vibrations</p>
       </div>
       <div class="footer-right">
         <nav class="footer-nav">
