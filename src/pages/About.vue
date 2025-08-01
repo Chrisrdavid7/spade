@@ -44,7 +44,7 @@
   
       <!-- Tagline -->
       <section class="about-bottom-tagline">
-        CURATING <br />THE CULTURE
+        Bridging Borders<br />With Basslines
       </section>
     </div>
   
