@@ -6,7 +6,28 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPADE</title>
+
+    <!-- Person schema for Google Knowledge Graph -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "DJ Spade",
+      "image": "https://spadedj.com/images/dj-spade-official-portrait.jpg",
+      "url": "https://spadedj.com/",
+      "sameAs": [
+        "https://www.instagram.com/spademuzik/",
+        "https://musicbrainz.org/artist/1eef7be5-e044-453e-9c26-0e7edf3b80c2"
+      ],
+      "jobTitle": "DJ / Producer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "OvO"
+      }
+    }
+    </script>
   </head>
+
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
