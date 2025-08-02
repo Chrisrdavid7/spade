@@ -2,7 +2,9 @@
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-left">
-        <img src="/images/spadeLogoWhite.png" alt="Spade Logo" class="footer-logo" />
+        <RouterLink to="/" class="footer-logo-btn" aria-label="Back to homepage">
+      <img src="/images/spadeLogoWhite.png" alt="Spade Logo" class="footer-logo" />
+    </RouterLink>
         <p class="footer-tagline">Connecting Cultures Through Vibrations</p>
       </div>
       <div class="footer-right">
