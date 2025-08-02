@@ -293,7 +293,7 @@
   
   @media (max-width: 768px) {
     .about-bottom-tagline {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
   </style>
