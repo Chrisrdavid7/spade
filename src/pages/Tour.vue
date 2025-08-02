@@ -43,6 +43,13 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useSeo } from '../composables/useSeo'
+useSeo({
+  title: 'TOUR',
+  description: 'Official schedule and ticket links for DJ Spade on the road.',
+  ogImage: '/images/spadeTour.jpg',
+  canonical: 'https://spadedj.com/tour'
+})
 
 const showOverlay = ref(true)
 const imageLoaded = ref(false)

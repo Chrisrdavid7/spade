@@ -13,7 +13,15 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import HeroVideo from '../components/HeroVideo.vue'
+import { useSeo } from '../composables/useSeo'
 
+/* ───────── SEO metadata ───────── */
+useSeo({
+  title: 'SPADE',
+  description: 'DJ SPADE',
+  ogImage: '/images/dj-spade-official-portrait.jpg',
+  canonical: 'https://spadedj.com'
+})
 const showOverlay = ref(true)
 
 onMounted(() => {

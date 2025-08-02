@@ -36,6 +36,16 @@
   
   <script setup>
   import { ref } from 'vue'
+  import { useSeo } from '../composables/useSeo'
+
+/* ───────── SEO metadata ───────── */
+useSeo({
+  title: 'PRESS',
+  description: 'Spade mentions in the Press.',
+  ogImage: '/images/dj-spade-official-portrait.jpg',
+  canonical: 'https://spadedj.com/press'
+})
+
   
   /* Hero fade-in */
   const imageLoaded = ref(false)

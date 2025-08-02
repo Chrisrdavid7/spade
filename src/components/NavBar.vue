@@ -67,6 +67,7 @@ const isBlackPage = computed(() =>
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 0.95rem;
   font-weight: 300;
   text-transform: uppercase;

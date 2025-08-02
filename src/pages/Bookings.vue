@@ -41,6 +41,15 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
+import { useSeo } from '../composables/useSeo'
+
+/* ───────── SEO metadata ───────── */
+useSeo({
+  title: 'BOOKINGS',
+  description: 'Submit a booking request to bring DJ Spade’s signature sound to your venue or private event.',
+  ogImage: '/images/spadeAbout.jpg',
+  canonical: 'https://spadedj.com/bookings'
+})
 
 const form = reactive({
   name: '',
