@@ -12,7 +12,7 @@
           <RouterLink to="/about">About</RouterLink>
           <RouterLink to="/tour">Tour</RouterLink>
           <RouterLink to="/bookings">Bookings</RouterLink>
-          <RouterLink to="/bookings">Press</RouterLink>
+          <RouterLink to="/press">Press</RouterLink>
         </nav>
         <a
           href="https://www.instagram.com/spademuzik/"
