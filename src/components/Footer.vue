@@ -12,6 +12,7 @@
           <RouterLink to="/about">About</RouterLink>
           <RouterLink to="/tour">Tour</RouterLink>
           <RouterLink to="/bookings">Bookings</RouterLink>
+          <RouterLink to="/bookings">Press</RouterLink>
         </nav>
         <a
           href="https://www.instagram.com/spademuzik/"
@@ -22,7 +23,7 @@
         >
           <i class="fab fa-instagram"></i>
         </a>
-        <p class="footer-copy">© 2025 Spademuzik. All rights reserved.</p>
+        <p class="footer-copy">© 2025 Spademuzik LLC. All rights reserved.</p>
       </div>
     </div>
   </footer>
