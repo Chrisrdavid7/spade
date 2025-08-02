@@ -19,7 +19,7 @@ import { useSeo } from '../composables/useSeo'
 useSeo({
   title: 'SPADE',
   description: 'DJ SPADE',
-  ogImage: '/images/dj-spade-official-portrait.jpg',
+  ogImage: '/images/spadeLogoWhite.png',
   canonical: 'https://spadedj.com'
 })
 const showOverlay = ref(true)

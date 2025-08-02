@@ -1,11 +1,12 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { SitemapPlugin } from 'vite-plugin-sitemap'
+import Sitemap from 'vite-plugin-sitemap'
 
 export default defineConfig({
   plugins: [
     vue(),
-    SitemapPlugin({
+    Sitemap({
       hostname: 'https://spadedj.com',
       // simple list of routable paths
       urls: [
