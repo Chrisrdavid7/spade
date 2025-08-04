@@ -3,8 +3,8 @@
     <div class="footer-content">
       <div class="footer-left">
         <RouterLink to="/" class="footer-logo-btn" aria-label="Back to homepage">
-      <img src="/images/spadeLogoWhite.png" alt="Spade Logo" class="footer-logo" />
-    </RouterLink>
+          <img src="/images/spadeLogoWhite.png" alt="Spade Logo" class="footer-logo" />
+        </RouterLink>
         <p class="footer-tagline">Connecting Cultures Through Vibrations</p>
       </div>
       <div class="footer-right">
@@ -24,10 +24,16 @@
           <i class="fab fa-instagram"></i>
         </a>
         <p class="footer-copy">© 2025 Spademuzik LLC. All rights reserved.</p>
+
+        <!-- Culse Logo -->
+        <div class="culse-logo-wrapper">
+          <img src="/images/culseLogo.png" alt="Culse Logo" class="culse-logo" />
+        </div>
       </div>
     </div>
   </footer>
 </template>
+
 
 <script setup>
 import { RouterLink } from 'vue-router'
@@ -130,4 +136,14 @@ import { RouterLink } from 'vue-router'
     gap: 1rem;
   }
 }
+.culse-logo-wrapper {
+  margin-top: 1rem;
+}
+
+.culse-logo {
+  width: 30px;
+  height: auto;
+  opacity: 0.85;
+}
+
 </style>
