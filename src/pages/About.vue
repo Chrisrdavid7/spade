@@ -73,8 +73,11 @@ const imageLoaded = ref(false)
 
 const carouselImages = [
   { src: '/images/spade1.jpg',    label: 'Berkshire', sublabel: '2025', desc: 'Nocta Manor' },
+  { src: '/images/spadeTour1.png', label: 'United Kingdom',   sublabel: '2025', desc: 'Some Special Shows 4 U' },
   { src: '/images/spadeRoom.jpg', label: 'New York',  sublabel: '2025', desc: 'Amber Room' },
   { src: '/images/spadeAus.jpg',  label: 'Australia', sublabel: '2025', desc: 'Anita Max Win Tour' },
+  { src: '/images/spadeTour2.jpg',  label: 'Amsterdam', sublabel: '2025', desc: 'Some Special Shows 4 U' },
+  { src: '/images/spadeTour3.jpg',  label: 'Amsterdam', sublabel: '2025', desc: 'Some Special Shows 4 U' },
   { src: '/images/spadeMiami.jpg',label: 'Miami',     sublabel: '2025', desc: 'LIV Miami' },
   { src: '/images/spade5.jpg',    label: 'Boston',    sublabel: '2023', desc: 'Big Night Live' },
   { src: '/images/spade6.jpg',    label: 'London',    sublabel: '2024', desc: 'Tape London' },
