@@ -10,7 +10,14 @@
       <source :src="isMobile ? '/videos/spadeMobile2.mp4' : '/videos/spadeShow2.mp4'" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <div class="hero-overlay" />
+
+    <!-- Overlay for darkening -->
+    <div class="hero-overlay"></div>
+
+    <!-- Tagline text -->
+    <div class="hero-text">
+      Culture in Motion
+    </div>
   </div>
 </template>
 
@@ -59,5 +66,22 @@ onBeforeUnmount(() => {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
+}
+
+/* Tagline styling */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: 'Neue Montreal', sans-serif;
+
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
 }
 </style>
