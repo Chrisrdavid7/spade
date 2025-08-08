@@ -7,6 +7,7 @@
         </RouterLink>
         <p class="footer-tagline">Connecting Cultures Through Vibrations</p>
       </div>
+
       <div class="footer-right">
         <nav class="footer-nav">
           <RouterLink to="/about">About</RouterLink>
@@ -24,16 +25,15 @@
           <i class="fab fa-instagram"></i>
         </a>
         <p class="footer-copy">© 2025 Spademuzik LLC. All rights reserved.</p>
-
-        <!-- Culse Logo -->
-        <div class="culse-logo-wrapper">
-          <img src="/images/culseLogo.png" alt="Culse Logo" class="culse-logo" />
-        </div>
       </div>
+    </div>
+
+    <!-- Centered Culse Logo -->
+    <div class="culse-logo-wrapper">
+      <img src="/images/culseLogo.png" alt="Culse Logo" class="culse-logo" />
     </div>
   </footer>
 </template>
-
 
 <script setup>
 import { RouterLink } from 'vue-router'
@@ -45,7 +45,7 @@ import { RouterLink } from 'vue-router'
 .site-footer {
   background-color: #000;
   color: #fff;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 2rem;
   font-family: 'Helvetica Neue', sans-serif;
 }
 
@@ -53,7 +53,7 @@ import { RouterLink } from 'vue-router'
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   gap: 2rem;
@@ -62,7 +62,6 @@ import { RouterLink } from 'vue-router'
 .footer-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .footer-logo {
@@ -118,32 +117,31 @@ import { RouterLink } from 'vue-router'
   color: #888;
 }
 
-/* Responsive */
+/* Centered Culse Logo */
+.culse-logo-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.culse-logo {
+  width: 40px;
+  height: auto;
+  opacity: 0.85;
+}
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
-  .footer-left,
   .footer-right {
     align-items: center;
   }
-
   .footer-nav {
     flex-direction: column;
     gap: 1rem;
   }
 }
-.culse-logo-wrapper {
-  margin-top: 1rem;
-}
-
-.culse-logo {
-  width: 30px;
-  height: auto;
-  opacity: 0.85;
-}
-
 </style>
