@@ -77,7 +77,6 @@ onBeforeUnmount(() => {
   color: white;
   font-size: clamp(2rem, 5vw, 4rem);
   font-family: 'Neue Montreal', sans-serif;
-
   font-weight: 100;
   letter-spacing: 2px;
   text-transform: uppercase;
