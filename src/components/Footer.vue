@@ -43,7 +43,7 @@
           <i class="fab fa-instagram"></i>
         </a>
 
-        <p class="footer-copy">© 2025 Spademuzik LLC. All rights reserved.</p>
+        <p class="footer-copy">© 2025 All Spade LLC. All rights reserved.</p>
       </div>
     </div>
 
@@ -136,17 +136,18 @@ const subscribe = async () => {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
-  width: 100%;
+  width: 50%;
 }
 .subscribe-input {
   padding: 0.5rem 0.75rem;
   border: none;
   border-radius: 4px;
+  background-color: #888;
   flex: 1;
   font-size: 0.9rem;
 }
 .subscribe-btn {
-  background-color: #fff;
+  background-color: #ffffffa9;
   color: #000;
   font-weight: bold;
   border: none;
