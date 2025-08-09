@@ -14,7 +14,8 @@ export default defineConfig({
         '/about',
         '/tour',
         '/bookings',
-        '/press'
+        '/press', 
+        '/shop', 
       ]
       // you can also pass a function to fetch Vite router routes automatically
     })
