@@ -16,7 +16,7 @@
           <RouterLink to="/press">Press</RouterLink>
         </nav>
         <a
-          href="https://www.instagram.com/spademuzik/"
+          href="https://www.instagram.com/spade/"
           target="_blank"
           rel="noopener"
           class="instagram-icon"
