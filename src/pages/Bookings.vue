@@ -32,6 +32,11 @@
                 yoni@dgimanagement.com
               </a>
             </p>
+            <p>
+              <a href="mailto:jake@allspade.com" class="agency-email">
+                jake@allspade.com
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -119,6 +124,11 @@ async function submitBooking() {
   justify-content: center;
 }
 
+.form-section h2,
+.subtitle {
+  text-align: center;
+}
+
 .form-section {
   flex: 1 1 400px;
   max-width: 600px;
@@ -163,11 +173,14 @@ button {
   text-transform: uppercase;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  display: block;      /* make it block-level */
+  margin: 0 auto;      /* center horizontally */
 }
 
 button:hover {
   background-color: #333;
 }
+
 
 .success-msg {
   margin-top: 1rem;
@@ -188,6 +201,7 @@ button:hover {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .agency-card {
@@ -199,6 +213,7 @@ button:hover {
   font-size: 0.95rem;
   color: #333;
   line-height: 1.6;
+  text-align: center;
 }
 
 .agency-email {
