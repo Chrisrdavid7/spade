@@ -1,6 +1,12 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ]
-  }
-  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "https://www.allspade.com/:path*",
+      "destination": "https://allspade.com/:path*",
+      "permanent": true
+    }
+  ]
+}

@@ -34,7 +34,7 @@
         </nav>
 
         <a
-          href="https://www.instagram.com/spade/"
+          href="https://www.instagram.com/spademuzik/"
           target="_blank"
           rel="noopener"
           class="instagram-icon"

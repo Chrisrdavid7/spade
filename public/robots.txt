@@ -1,0 +1,7 @@
+# robots.txt for allspade.com
+User-agent: *
+Allow: /
+
+# Point crawlers to your sitemap
+Sitemap: https://www.allspade.com/sitemap.xml
+Sitemap: https://allspade.com/sitemap.xml
