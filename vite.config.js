@@ -1,20 +1,15 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { ViteSitemapPlugin } from 'vite-plugin-sitemap'
+import Sitemap from 'vite-plugin-sitemap'   // <-- default import
 
 export default defineConfig({
   plugins: [
     vue(),
-    ViteSitemapPlugin({
+    Sitemap({
       hostname: 'https://allspade.com',
-      routes: [
-        '/', 
-        '/about',
-        '/bookings',
-        '/tour',
-        '/press',
-        '/shop'
-      ]
-    })
-  ]
+      // add any non-router pages here if needed
+      dynamicRoutes: ['/', '/about', '/bookings', '/tour', '/press', '/shop'],
+    }),
+  ],
 })
