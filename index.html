@@ -26,127 +26,130 @@
   
     <!-- Structured Data (valid JSON-LD, no comments) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://allspade.com#org",
-          "name": "AllSpade",
-          "url": "https://allspade.com/",
-          "logo": "https://allspade.com/images/spade-logo.png",
-          "sameAs": [
-            "https://www.instagram.com/spademuzik",
-            "https://twitter.com/spademuzik",
-            "https://www.facebook.com/spademuzik"
-          ],
-          "contactPoint": [{
-            "@type": "ContactPoint",
-            "contactType": "Bookings",
-            "email": "info@allspade.com",
-            "areaServed": "US",
-            "availableLanguage": "en"
-          }]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://allspade.com#website",
-          "url": "https://allspade.com/",
-          "name": "AllSpade",
-          "inLanguage": "en",
-          "publisher": { "@id": "https://allspade.com#org" },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://allspade.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://allspade.com/#org",
+            "name": "AllSpade",
+            "url": "https://allspade.com/",
+            "logo": "https://allspade.com/images/spade-logo.png",
+            "sameAs": [
+              "https://www.instagram.com/spademuzik",
+              "https://twitter.com/spademuzik",
+              "https://www.facebook.com/spademuzik"
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "Bookings",
+                "email": "info@allspade.com",
+                "areaServed": "US",
+                "availableLanguage": "en"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://allspade.com/#website",
+            "url": "https://allspade.com/",
+            "name": "AllSpade",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://allspade.com/#org" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://allspade.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://allspade.com/#person",
+            "name": "Spade",
+            "alternateName": ["Gayson Kewley"],
+            "url": "https://allspade.com/",
+            "image": "https://allspade.com/images/dj-spade-official-portrait.jpg",
+            "jobTitle": "Artist / Producer / Entrepreneur",
+            "sameAs": [
+              "https://www.instagram.com/spademuzik",
+              "https://musicbrainz.org/artist/1eef7be5-e044-453e-9c26-0e7edf3b80c2"
+            ],
+            "worksFor": { "@id": "https://allspade.com/#org" },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "booking",
+                "email": "info@allspade.com",
+                "areaServed": "US",
+                "availableLanguage": "en"
+              }
+            ],
+            "birthDate": "1983-03-28",
+            "birthPlace": { "@type": "Place", "name": "Georgetown, Guyana" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://allspade.com/#home",
+            "url": "https://allspade.com/",
+            "name": "Spade — Official Site",
+            "description": "Official site for Spade — global artist, producer, and creative entrepreneur.",
+            "isPartOf": { "@id": "https://allspade.com/#website" },
+            "inLanguage": "en",
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://allspade.com/images/dj-spade-official-portrait.jpg"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://allspade.com/about#page",
+            "url": "https://allspade.com/about",
+            "name": "About — Spade",
+            "description": "Biography, vision, and global influence of Spade.",
+            "isPartOf": { "@id": "https://allspade.com/#website" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://allspade.com/tour#page",
+            "url": "https://allspade.com/tour",
+            "name": "Tour — Spade",
+            "description": "Upcoming shows and appearances for Spade.",
+            "isPartOf": { "@id": "https://allspade.com/#website" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://allspade.com/bookings#page",
+            "url": "https://allspade.com/bookings",
+            "name": "Bookings — Spade",
+            "description": "Submit a booking request for Spade's live performances and appearances.",
+            "isPartOf": { "@id": "https://allspade.com/#website" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://allspade.com/press#page",
+            "url": "https://allspade.com/press",
+            "name": "Press — Spade",
+            "description": "Official press resources, articles, and media coverage of Spade.",
+            "isPartOf": { "@id": "https://allspade.com/#website" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://allspade.com/shop#page",
+            "url": "https://allspade.com/shop",
+            "name": "Shop — Spade",
+            "description": "Official Spade merchandise and limited edition drops.",
+            "isPartOf": { "@id": "https://allspade.com/#website" },
+            "inLanguage": "en"
           }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://allspade.com#person",
-          "name": "Spade",
-          "alternateName": ["Gayson Kewley"],
-          "url": "https://allspade.com/",
-          "image": "https://allspade.com/images/dj-spade-official-portrait.jpg",
-          "jobTitle": "Artist / Producer / Entrepreneur",
-          "sameAs": [
-            "https://www.instagram.com/spademuzik",
-            "https://musicbrainz.org/artist/1eef7be5-e044-453e-9c26-0e7edf3b80c2"
-          ],
-          "worksFor": { "@id": "https://allspade.com#org" },
-          "contactPoint": [{
-            "@type": "ContactPoint",
-            "contactType": "booking",
-            "email": "info@allspade.com",
-            "areaServed": "US",
-            "availableLanguage": "en"
-          }],
-          "birthDate": "1983-03-28",
-          "birthPlace": { "@type": "Place", "name": "Georgetown, Guyana" }
-        },
-  
-        /* Web pages */
-        {
-          "@type": "WebPage",
-          "@id": "https://allspade.com#home",
-          "url": "https://allspade.com/",
-          "name": "Spade — Official Site",
-          "description": "Official site for Spade — global artist, producer, and creative entrepreneur.",
-          "isPartOf": { "@id": "https://allspade.com#website" },
-          "inLanguage": "en",
-          "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "url": "https://allspade.com/images/dj-spade-official-portrait.jpg"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://allspade.com/about#page",
-          "url": "https://allspade.com/about",
-          "name": "About — Spade",
-          "description": "Biography, vision, and global influence of Spade.",
-          "isPartOf": { "@id": "https://allspade.com#website" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://allspade.com/tour#page",
-          "url": "https://allspade.com/tour",
-          "name": "Tour — Spade",
-          "description": "Upcoming shows and appearances for Spade.",
-          "isPartOf": { "@id": "https://allspade.com#website" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://allspade.com/bookings#page",
-          "url": "https://allspade.com/bookings",
-          "name": "Bookings — Spade",
-          "description": "Submit a booking request for Spade's live performances and appearances.",
-          "isPartOf": { "@id": "https://allspade.com#website" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://allspade.com/press#page",
-          "url": "https://allspade.com/press",
-          "name": "Press — Spade",
-          "description": "Official press resources, articles, and media coverage of Spade.",
-          "isPartOf": { "@id": "https://allspade.com#website" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://allspade.com/shop#page",
-          "url": "https://allspade.com/shop",
-          "name": "Shop — Spade",
-          "description": "Official Spade merchandise and limited edition drops.",
-          "isPartOf": { "@id": "https://allspade.com#website" },
-          "inLanguage": "en"
-        }
-      ]
-    }
-    </script>
+        ]
+      }
+      </script>
+      
   </head>
   
   <body>
