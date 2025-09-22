@@ -27,14 +27,14 @@
             <p>DGI Management, Inc.</p>
             <p>401 Broadway, Suite 1705</p>
             <p>New York, NY 10013</p>
-            <p>
+            <!-- <p>
               <a href="mailto:yoni@dgimanagement.com" class="agency-email">
                 yoni@dgimanagement.com
               </a>
-            </p>
+            </p> -->
             <p>
-              <a href="mailto:info@allspade.com" class="agency-email">
-                info@allspade.com
+              <a href="mailto:chris@culsecreative.com" class="agency-email">
+                chris@culsecreative.com
               </a>
             </p>
           </div>
