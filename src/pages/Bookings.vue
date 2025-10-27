@@ -33,8 +33,8 @@
               </a>
             </p> -->
             <p>
-              <a href="mailto:chris@culsecreative.com" class="agency-email">
-                chris@culsecreative.com
+              <a href="mailto:tae@dgimanagement.com " class="agency-email">
+                tae@dgimanagement.com 
               </a>
             </p>
           </div>
