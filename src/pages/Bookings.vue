@@ -34,7 +34,12 @@
             </p> -->
             <p>
               <a href="mailto:tae@dgimanagement.com " class="agency-email">
-                tae@dgimanagement.com 
+                tae@dgimanagement.com
+              </a>
+            </p>
+            <p>
+              <a href="mailto:allspadebookings@gmail.com " class="agency-email">
+                allspadebookings@gmail.com
               </a>
             </p>
           </div>
