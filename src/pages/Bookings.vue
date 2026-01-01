@@ -24,7 +24,7 @@
         <div class="agency-info">
           <h3 class="agency-heading">Representation</h3>
           <div class="agency-card">
-            <p>Call Jennifer</p>
+            <p>DGI Management, Inc.</p>
             <p>401 Broadway, Suite 1705</p>
             <p>New York, NY 10013</p>
             <!-- <p>
